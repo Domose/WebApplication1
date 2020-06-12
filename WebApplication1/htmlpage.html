@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Application Virtualization</title>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1 style="color:red;">ASP.NET in Azure</h1>
+        <p class="lead">
+            This is a simple app  we've built that demonstrates how to deploy a .NET app to Azure App Service
+            <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
+        </p>
+
+        <span>
+            <b>Jump to a Specific Section of the documents:</b> <br />
+            <a href="#S1">Definition of Application virtualization</a><br />
+            <a href="#S2">Types of App virtualization</a><br />
+            <a href="#S11">How It Works</a><br />
+            <a href="#S22">Benefits of Application Virtualization</a><br />
+            <a href="#S3">References and Reaserch Team</a>
+        </span>
+    </div>
+
+    <img src="https://parallels.cn/blogs/ras/app/uploads/2015/07/Application-Virtualization.png" alt="Application Virtualization" width="1109" height="400" />
+
+    <hr style="border-width:4px; border-color:red;" />
+
+
+
+    <div>
+
+        <div style="background-color:orange; color:white; padding:20px;">
+            <h2 id="S1">Application Virtualization</h2>
+        </div>
+        <p>
+            App virtualization (application virtualization) is the isolation of an application from the end
+            user's device that is used to access the software.<br /> The application operates from the user's
+            viewpoint just as it would if it existed on the local computer of the user. The user can shift or
+            adjust<br /> the application window size, and perform the operations of the keyboard and mouse. Often
+            there may be slight variations(difference) however,<br /> the consumer will usually have a smooth
+            experience.
+        </p>
+        <p>
+            Application virtualization, also known as application service virtualization, is a term under the larger umbrella of virtualization.
+            It refers<br /> to executing an application or software on a thin client; a terminal or network workstation with few resident programs
+            and most programs that<br /> exist on a connected server is accessed. The client runs in an environment isolated from the operating system
+            where the program is installed,<br /> often referred to be encapsulated from the operating system that holds the application.
+        </p>
+        <p>
+            Application virtualization tricks a computer into functioning as if the program is running on the local machine, when in reality it's running
+            on<br /> a virtual machine (usually a server) situated in another location, using its operating system (OS), and is accessed by the local
+            machine’s<br /> operating system. Problems of incompatibility with the operating System of the local computer, or even bugs or low-quality
+            code inside the<br /> program, can be solved by running virtual applications.
+        </p>
+        <br /><br />
+
+        <img src="https://www.cbronline.com/wp-content/uploads/2017/07/devices-in-cloud-940x443-768x362.jpg" alt="gogole virtual cloud" width="1109" height="400" />
+
+        <div style="background-color:tomato; color:white; padding:20px;"><h2 id="S11">How Application Virtualization Works</h2></div>
+        <p>
+            While there are several ways to virtualize software, IT teams mostly
+            follow a server-based strategy, delivering the software without having
+            to<br /> install them on individual desktops. Instead, administrators deploy
+            remote applications in the data centre on a server of an organization or<br />
+            through a hosting service on a cloud and then distribute them to
+            the user's computer.
+
+        </p>
+        <p>
+            To make this a reality, the IT teams must use an
+            application virtualization product. Virtualization software vendors and
+            their<br /> products include Microsoft App-V, Citrix XenApp, Parallels
+            Remote Application Servers, and VMware ThinApp or App Volumes-
+            both of which<br /> are included with VMware Horizon View. VMware
+            also provides Horizon Applications to enable application
+            virtualisation.
+        </p>
+
+        <br /><br /> <hr style="border-width:4px; border-color:red;" />
+
+
+        <div style="background-color:orange; padding:20px; color:white;"><h2 id="S2">Types of Application Virtualization</h2></div>
+        <br />
+
+        <p>
+            <span>✔</span><strong>Remote Application Virtualization-</strong> Remote applications run on a server, and end users can see and engage with their applications<br />
+            on a network via remote control protocol. Remote programs can be fully integrated with the desktop of the user so that they appear<br />
+            and behave as local applications, using technology known as seamless windows. To manage and execute remote applications<br />
+            efficiently a constant network connectivity must be maintained.
+        </p>
+        <p>
+            <span>✔</span><strong>Streaming Application Virtualization-</strong>The virtualized software is implemented on the local computer of the end-users during<br />
+            application streaming. When an application is requested, its components are immediately retrieved on demand from the local<br />
+            computer. In order to launch certain parts of the application are required, the rest can be downloaded as needed in the background.<br />
+            Upon completion of the download process, a streaming application can run without any network connectivity.
+        </p>
+        <br /><br />
+
+        <img src="https://image.freepik.com/foto-gratis/iconos-computadora-portatil-aplicaciones-voladoras_118047-876.jpg" alt="open virtualization" width="800" height="400" />
+
+        <div style="background-color:tomato; color:white; padding:20px;"><h2 id="S22">Benefits of App Virtualization</h2></div>
+        <p>
+            <strong>1. App Management:</strong> Application virtualization makes the management and maintenance of applications in an enterprise much<br />
+            simpler for IT departments. Instead of installing apps manually on every user's computer, App virtualization allows IT administrators<br />
+            to install  softwares once on a central server and then distribute the application on user devices as necessary. This also makes it easier<br />
+            to upgrade or patch applications aside from reducing installation time, as IT just has to do so on a single server.
+        </p>
+        <p>
+
+            <strong>2. Scalability:</strong> Application virtualization allows IT administrators to distribute virtual applications to all sorts of connected devices,<br />
+            irrespective of the operating systems or storage space used by such devices. This allows for thin client load balancing whereby users<br />
+            access an application on a low-cost machine while centralized servers manage all the computing power required to run the application.<br />
+            As a result, the company spends much less on computer resources as only basic computers are needed for employees to access the<br />
+            apps they need for work. App virtualization also enables users to access applications that wouldn't usually execute on the operating system<br />
+            of their computers, as the program actually runs on the centralized server. This is widely used to run a Windows program<br />
+            directly on a Linux operating system.
+        </p>
+        <p>
+            <strong>3. Security:</strong> Application virtualization software gives IT administrators central control over which applications users can access. If the<br />
+            application permissions of a user inside an organization changes, the IT administrator would simply restrict access of that user to an<br />
+            application. Without application virtualization of the app, the IT administrator will have to uninstall the application physically from<br />
+            the user's computer. This central control of access to apps is especially useful if a user's devices are stolen or lost, because the IT<br />
+            administrator may revoke remote access to sensitive data without having to track the missing device.
+        </p>
+
+        <p>
+            <strong>4. Simplified OS deployment:</strong>  Deploying a new OS within your network does not hinder the applications. Also, if you need to<br />
+            reinstall an image on a desktop, you don't have to care about the programs running on this computer, as end users can access them on<br />
+            the server.
+        </p>
+        <p>
+            <strong>5. Operating system independent:</strong> Often, virtualized applications are independent of OS. If you have Vista incompatible apps then<br />
+            app virtualization of the program could be your solution. Virtualization of software paves the way for Vista x64 too. In a virtual world,<br />
+            legacy applications which wouldn't work on a 64-bit device could run without problems on Vista x64. You can also run complex<br />
+            Windows apps on Linux and OS X alongside Wine and Crossover.
+        </p>
+
+        <hr style="border-width:4px; border-color:red;" />
+
+        <div style="background-color:AntiqueWhite; padding:20px;">
+            <table id="S3">
+                <tr>
+                    <th>References</th>
+                    <th>Research Team</th>
+                </tr>
+
+                <tr>
+                    <td><span>◙</span>  <a href="https://www.techopedia.com/definition/573/application-virtualization" target="_blank">technopedia.com </a></td>
+                    <td>Domose Raphael - 21814111</td>
+                </tr>
+
+                <tr>
+                    <td><span>◙</span>  <a href="https://searchvirtualdesktop.techtarget.com/definition/app-virtualization" target="_blank">serachvirtualdesktop</a></td>
+                    <td>Ebrar Berber -21704999 </td>
+                </tr>
+
+                <tr>
+                    <td><span>◙</span>  <a href="https://www.cloudoye.com/wiki/a/application-virtualization" target="_blank">cloudoye.com</a></td>
+                    <td>Furkan Kentenci - 21704490</td>
+                </tr>
+
+                <tr>
+                    <td><span>◙</span>  <a href="https://www.citrix.com/tr-tr/glossary/what-is-application-virtualization.html" target="_blank">citrix.com</a></td>
+                    <td>Dzhamil Hodzhayev - 21704998</td>
+                </tr>
+
+                <tr>
+                    <td><span>◙</span>  <a href="https://4sysops.com/archives/the-advantages-of-application-virtualization/" target="_blank">4sysops.com</a></td>
+                    <td>Yusuf Sedataltun - 21704996</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><span>◙</span>  <a href="https://en.wikipedia.org/wiki/Application_virtualization" target="_blank">wikipedia.com</a></td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+        <br />
+
+        <span>
+            <b>Jump to a Specific Section of the documents:</b> <br />
+            <a href="#S1">Definition of Application virtualization</a><br />
+            <a href="#S2">Types of App virtualization</a><br />
+            <a href="#S11">How It Works</a><br />
+            <a href="#S22">Benefits of Application Virtualization</a><br />
+            <a href="#S3">References and Reaserch Team</a>
+        </span>
+    </div>
+
+
+    <hr style="border-width:4px; border-color:red;" />
+
+</body>
+</html>
